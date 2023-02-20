@@ -1,0 +1,132 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 50px;
+  justify-content: center;
+  width: 100%;
+  justify-content: space-around;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.asdf {
+  display: flex;
+  align-items: center;
+}
+
+.navTitle {
+  text-align: center;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instargramIcon {
+  width: 35px;
+  margin-right: 10px;
+  border-right: 1px solid black;
+  padding: 5px;
+}
+
+.myPhoto {
+  width: 100%;
+}
+
+.feeds {
+  width: 40%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  border: 1px solid #e6e6e6;
+}
+
+.mainPage {
+  display: flex;
+  justify-content: center;
+  height: 60%;
+}
+
+.heart {
+  border: 0px;
+  background-color: white;
+  padding: 5px;
+}
+
+.feed {
+  display: flex;
+  width: 100%;
+}
+
+.whoIsLike {
+  font-size: 13px;
+}
+
+.main-right {
+  width: 50%;
+  border-left: 1px solid #e6e6e6;
+}
+
+.recommand {
+  width: 100%;
+}
+
+.asdfa {
+  border-top: 1px solid #e6e6e6;
+  margin-top: 10px;
+  display: flex;
+}
+
+.writer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 3%;
+}
+
+.story {
+  border: 1px solid #e6e6e6;
+  width: 80%;
+  margin-left: 9%;
+}
+
+.story-list {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  max-height: 30px;
+}
+
+.commentList {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.story-owner {
+  margin-left: 10px;
+}
+
+button {
+  width: 38px;
+  font-size: 13px;
+  background-color: #c4e0fc;
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
+
+.nickName {
+  margin-right: 10px;
+}
