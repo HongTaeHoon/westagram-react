@@ -1,43 +1,30 @@
 import React from "react";
-import "./Login.css";
+import "./Login.scss";
 
-function Login() {
+const Login = () => {
   return (
-    <div className="loginPage">
-      <div
-        style={{
-          fontFamily: "Lobster",
-          textAlign: "center",
-          fontSize: "45px",
-          marginBottom: "80px",
-        }}
-      >
-        westagram
-      </div>
-      <div className="idBox">
-        <input
-          type="text"
-          id="id"
-          placeholder="전화번호, 사용자 이름 또는 이메일"
-          style={{ width: "80%", padding: "10px" }}
-        />
-      </div>
-      <div className="passwordBox">
-        <input
-          type="password"
-          id="password"
-          placeholder="비밀번호"
-          style={{ width: "80%", padding: "10px" }}
-        />
-      </div>
+    <div className="page">
+      <div className="loginPage">
+        <div className="westagramBox">westagram</div>
+        <div className="idBox">
+          <input
+            type="text"
+            id="idBox"
+            placeholder="전화번호, 사용자 이름 또는 이메일"
+          />
+        </div>
+        <div className="passwordBox">
+          <input type="password" id="passwordBox" placeholder="비밀번호" />
+        </div>
 
-      <button className="button" style={{ padding: "10px" }}>
-        로그인
-      </button>
+        <button className="button" value="value">
+          로그인
+        </button>
 
-      <div className="forgetPassword">비밀번호를 잊으셨나요?</div>
+        <div className="forgetPassword">비밀번호를 잊으셨나요?</div>
+      </div>
     </div>
   );
-}
+};
 
 export default Login;
