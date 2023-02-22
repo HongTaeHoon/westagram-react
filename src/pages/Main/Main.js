@@ -1,5 +1,5 @@
-import React from "react";
-import "./Main.scss";
+import React from 'react';
+import './Main.scss';
 
 function Main() {
   return (
@@ -45,17 +45,17 @@ function Main() {
                   <img className="myPhoto" src="images/IMG_1278.jpeg" alt="" />
                   <div>
                     <section>
-                      <i id="awsomeIcon" className="fa-regular fa-heart"></i>
-                      <i id="awsomeIcon" className="fa-regular fa-message"></i>
+                      <i id="awsomeIcon" className="fa-regular fa-heart" />
+                      <i id="awsomeIcon" className="fa-regular fa-message" />
                       <i
                         id="awsomeIcon"
                         className="fa-solid fa-arrow-up-from-bracket"
-                      ></i>
+                      />
                     </section>
                     <section>
                       <span className="whoIsLike">여러명이 좋아합니다.</span>
 
-                      <div className="commentList"></div>
+                      <div className="commentList" />
 
                       <div className="addComment">
                         <input
