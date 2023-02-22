@@ -3,7 +3,7 @@ import "./Main.scss";
 
 function Main() {
   return (
-    <div className="mainPage">
+    <div className="main">
       <div className="bar">
         <nav className="navigation">
           <div className="navLeft">
@@ -34,7 +34,7 @@ function Main() {
           </div>
         </nav>
         <main className="mainPage">
-          <div className="main">
+          <div className="mainfeed">
             <section className="mainLeft">
               <div className="feed">
                 <artcle>

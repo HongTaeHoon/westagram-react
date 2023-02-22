@@ -1,0 +1,15 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin textStyle($fontSize, $width) {
+  font-size: $fontSize;
+  width: $width;
+}
+
+@mixin boxSize($width, $padding) {
+  width: $width;
+  padding: $padding;
+}

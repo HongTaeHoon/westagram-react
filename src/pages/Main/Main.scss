@@ -1,166 +1,154 @@
-* {
-  box-sizing: border-box;
+@import "../../styles/mixin.scss";
+@import "../../styles/variable.scss";
+@import "../../styles/common.scss";
 
-  body {
+.main {
+  width: 100%;
+
+  .bar {
+    @include flexCenter;
+    flex-direction: column;
+
+    .navigation {
+      @include flexCenter;
+      flex-direction: row;
+      height: 50px;
+      border-bottom: 1px solid #e6e6e6;
+      margin-bottom: 50px;
+      justify-content: space-around;
+      @include boxSize(100%, 0);
+      .navLeft {
+        @include flexCenter;
+
+        .instargramIcon {
+          @include boxSize(35px, 5px);
+          margin-right: 10px;
+          border-right: 1px solid black;
+        }
+
+        .navTitle {
+          text-align: center;
+          font-family: "Lobster";
+        }
+      }
+      .navIcon {
+        width: 25px;
+        margin: 5px;
+      }
+    }
     .mainPage {
-      width: 100%;
+      @include flexCenter;
+      height: 60%;
 
-      .bar {
+      .mainfeed {
+        width: 40%;
+
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-flow: row nowrap;
+        border: 1px solid #e6e6e6;
 
-        .navigation {
+        .mainLeft {
           display: flex;
-          flex-direction: row;
-          align-items: center;
-          height: 50px;
-          border-bottom: 1px solid #e6e6e6;
-          margin-bottom: 50px;
-          justify-content: center;
           width: 100%;
-          justify-content: space-around;
 
-          .navLeft {
-            display: flex;
-            align-items: center;
+          .feed {
+            width: 100%;
 
-            .instargramIcon {
-              width: 35px;
-              margin-right: 10px;
-              border-right: 1px solid black;
-              padding: 5px;
+            .writer {
+              width: 100%;
+              @include flexCenter;
+              margin-left: 3%;
+
+              .mari {
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+              }
+
+              .name {
+                margin-left: 10px;
+              }
             }
 
-            .navTitle {
-              text-align: center;
-              font-family: "Lobster";
+            .myPhoto {
+              width: 100%;
             }
-          }
-          .navIcon {
-            width: 25px;
-            margin: 5px;
+
+            #awsomeIcon {
+              margin: 2px;
+            }
+
+            .whoIsLike {
+              font-size: 13px;
+            }
+
+            .commentList {
+              display: flex;
+              flex-direction: column;
+            }
+
+            .addComment {
+              border-top: 1px solid #e6e6e6;
+              margin-top: 10px;
+              display: flex;
+
+              #comment {
+                border: none;
+                width: 100%;
+              }
+              button {
+                @include textStyle(13px, 38px);
+                background-color: #c4e0fc;
+                border: none;
+                color: white;
+                border-radius: 3px;
+              }
+            }
           }
         }
-        .mainPage {
-          display: flex;
-          justify-content: center;
-          height: 60%;
+        .mainRight {
+          width: 50%;
+          border-left: 1px solid #e6e6e6;
 
-          .main {
-            width: 40%;
+          .writer {
+            width: 100%;
+            @include flexCenter;
+            margin-left: 3%;
 
-            display: flex;
-            flex-flow: row nowrap;
-            border: 1px solid #e6e6e6;
-
-            .mainLeft {
-              display: flex;
-              width: 100%;
-
-              .feed {
-                width: 100%;
-
-                .writer {
-                  width: 100%;
-                  display: flex;
-                  align-items: center;
-                  margin-left: 3%;
-
-                  .mari {
-                    border-radius: 50%;
-                    width: 40px;
-                    height: 40px;
-                  }
-
-                  .name {
-                    margin-left: 10px;
-                  }
-                }
-
-                .myPhoto {
-                  width: 100%;
-                }
-
-                #awsomeIcon {
-                  margin: 2px;
-                }
-
-                .whoIsLike {
-                  font-size: 13px;
-                }
-
-                .commentList {
-                  display: flex;
-                  flex-direction: column;
-                }
-
-                .addComment {
-                  border-top: 1px solid #e6e6e6;
-                  margin-top: 10px;
-                  display: flex;
-
-                  #comment {
-                    border: none;
-                    width: 100%;
-                  }
-                  button {
-                    width: 38px;
-                    font-size: 13px;
-                    background-color: #c4e0fc;
-                    border: none;
-                    color: white;
-                    border-radius: 3px;
-                  }
-                }
-              }
+            .idOwner {
+              border-radius: 50%;
+              width: 25px;
+              height: 25px;
             }
-            .mainRight {
-              width: 50%;
-              border-left: 1px solid #e6e6e6;
 
-              .writer {
-                width: 100%;
-                display: flex;
-                align-items: center;
-                margin-left: 3%;
+            .idOwnerName {
+              margin-left: 10px;
+            }
+          }
+          .story {
+            border: 1px solid #e6e6e6;
+            width: 80%;
+            margin-left: 9%;
 
-                .idOwner {
-                  border-radius: 50%;
-                  width: 25px;
-                  height: 25px;
-                }
+            .storyTitle {
+              margin: 5px;
+              color: #a2a2a2;
+            }
 
-                .idOwnerName {
-                  margin-left: 10px;
-                }
+            .storyList {
+              display: flex;
+              align-items: center;
+              margin-left: 5px;
+              max-height: 30px;
+
+              .storyImage {
+                border-radius: 50%;
+                width: 25px;
+                height: 25px;
               }
-              .story {
-                border: 1px solid #e6e6e6;
-                width: 80%;
-                margin-left: 9%;
 
-                .storyTitle {
-                  margin: 5px;
-                  color: #a2a2a2;
-                }
-
-                .storyList {
-                  display: flex;
-                  align-items: center;
-                  margin-left: 5px;
-                  max-height: 30px;
-
-                  .storyImage {
-                    border-radius: 50%;
-                    width: 25px;
-                    height: 25px;
-                  }
-
-                  .storyOwner {
-                    margin-left: 10px;
-                  }
-                }
+              .storyOwner {
+                margin-left: 10px;
               }
             }
           }
